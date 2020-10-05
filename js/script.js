@@ -40,3 +40,53 @@ else if(playerInput == '3'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+// And the winer is ... 
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+}
+
+else if( computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Przegrana!');
+}
+
+else if( computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Remis!');
+}
+
+else if( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
+    printMessage('Oszust!');
+}
+
+else if( computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Przegrana!');
+}
+
+else if( computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Remis!');
+}
+
+else if( computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+}
+
+else if( computerMove == 'papier' && playerMove == 'nieznany ruch'){
+    printMessage('Oszust!');
+}
+
+else if( computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+}
+
+else if( computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Przegrana!');
+}
+
+else if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Remis!');
+}
+
+else if( computerMove == 'nożyce' && playerMove == 'nieznany ruch'){
+    printMessage('Oszust!');
+}
